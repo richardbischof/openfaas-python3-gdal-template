@@ -14,6 +14,12 @@ Create a new function
 faas new --lang python3-gdal <fn-name>  
 ```
 
+Replace example gdal.VersionInfo() with your own logic.  
+```
+def handle(req):
+    return gdal.VersionInfo()
+```
+
 Build, push and deploy  
 ```
 faas up -f <fn-name>.yml
