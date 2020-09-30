@@ -6,4 +6,4 @@ def handle(req):
         req (str): request body
     """
 
-    return req
+    return gdal.VersionInfo()
